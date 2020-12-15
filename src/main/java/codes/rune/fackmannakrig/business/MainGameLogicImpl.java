@@ -11,6 +11,8 @@ public class MainGameLogicImpl implements GameLogic {
     }
 
     String gameName = "Fackmannakrig";
+    boolean isRunning = false;
+
     HashSet<Player> playerHashSet = new HashSet<>();
 
     @Override
@@ -18,13 +20,12 @@ public class MainGameLogicImpl implements GameLogic {
         this.playerHashSet = playerHashSet;
     }
 
-    public void addPlayer(Player player){
-        playerHashSet.add(player);
-    }
-
     @Override
     public void launch() {
         System.out.println("Launching game " + gameName);
+        isRunning = true;
     }
+
+
 
 }

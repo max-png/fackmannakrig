@@ -10,7 +10,6 @@ public class Database {
     HashSet<Player> playerHashSet = new HashSet<>();
     HashSet<Fighter> fighterHashSet = new HashSet<>();
 
-
     void poulateHashSets(){
 
     }
@@ -22,4 +21,17 @@ public class Database {
     public HashSet<Fighter> getFighterHashSet() {
         return fighterHashSet;
     }
+
+    void addPlayer(Player player){
+        playerHashSet.add(player);
+    }
+
+    void addFighter(Fighter fighter){
+        fighterHashSet.add(fighter);
+    }
+
+    void deletePlayerById(int id){
+    }
+
+
 }
