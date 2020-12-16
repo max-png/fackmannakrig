@@ -1,9 +1,8 @@
-package codes.rune.fackmannakrig.controllers;
+package codes.rune.fackmannakrig.match;
 
-import codes.rune.fackmannakrig.dtos.requests.NewMatch;
-import codes.rune.fackmannakrig.dtos.responses.MatchPoll;
-import codes.rune.fackmannakrig.models.MatchResult;
-import codes.rune.fackmannakrig.services.MatchService;
+import codes.rune.fackmannakrig.match.dtos.requests.NewMatch;
+import codes.rune.fackmannakrig.match.dtos.responses.MatchPoll;
+import codes.rune.fackmannakrig.match.models.MatchResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
-package codes.rune.fackmannakrig.services;
+package codes.rune.fackmannakrig.match;
 
-import codes.rune.fackmannakrig.models.MatchResult;
-import codes.rune.fackmannakrig.repositories.PlayerRepository;
+import codes.rune.fackmannakrig.match.db.repositories.PlayerRepository;
+import codes.rune.fackmannakrig.match.models.MatchResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

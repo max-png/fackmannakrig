@@ -1,4 +1,4 @@
-package codes.rune.fackmannakrig.db.entities;
+package codes.rune.fackmannakrig.match.db.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

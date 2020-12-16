@@ -1,4 +1,4 @@
-package codes.rune.fackmannakrig.dtos.responses;
+package codes.rune.fackmannakrig.match.dtos.responses;
 
 public class MatchPoll {
 

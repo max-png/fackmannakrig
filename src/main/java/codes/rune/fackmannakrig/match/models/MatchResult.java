@@ -1,4 +1,4 @@
-package codes.rune.fackmannakrig.models;
+package codes.rune.fackmannakrig.match.models;
 
 public class MatchResult {
 

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "codes.rune.fackmannakrig.repositories")
+@EnableJpaRepositories(basePackages = "codes.rune.fackmannakrig")
 public class FackmannakrigApplication {
 
     public static void main(String[] args) {
