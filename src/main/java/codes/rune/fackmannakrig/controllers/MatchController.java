@@ -30,7 +30,7 @@ public class MatchController {
         }
     }
 
-    @GetMapping("poll/{gameId}")
+    @GetMapping("poll/{matchId}")
     public ResponseEntity<MatchPoll> poll(@RequestParam int matchId) {
         try {
             MatchResult result = service.pollMatch(matchId);
