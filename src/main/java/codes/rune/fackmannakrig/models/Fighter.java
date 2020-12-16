@@ -4,6 +4,7 @@ import codes.rune.fackmannakrig.data.FighterClass;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
+import static org.apache.commons.lang3.Validate.notEmpty;
 
 public class Fighter {
 
@@ -16,13 +17,15 @@ public class Fighter {
     private int level;
     private int health;
     private int mana;
+    private int damage;
 
     private ArrayList<Spell> spells;
 
     public Fighter(String name) {
-        this.name = name;
+        this.name = notEmpty(name);
         level = 0;
         id = count.incrementAndGet();
+        damage = 1;
     }
 
     public String getName() {
@@ -73,4 +76,13 @@ public class Fighter {
     public void setSpells(ArrayList<Spell> spells) {
         this.spells = spells;
     }
+
+    public void TakeDamage(int healthPoints) {
+        this.health -= healthPoints;
+    }
+
+    public void Hit(Fighter fighter) {
+        fighter.TakeDamage(this.damage);
+    }
+
 }

@@ -1,6 +1,8 @@
 package codes.rune.fackmannakrig.models;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import static org.apache.commons.lang3.Validate.notEmpty;
+import static org.apache.commons.lang3.Validate.notNull;
 
 public class Player {
 
@@ -10,8 +12,8 @@ public class Player {
     private final int id;
 
     public Player(String name, Fighter fighter) {
-        this.name = name;
-        this.fighter = fighter;
+        this.name = notEmpty(name);
+        this.fighter = notNull(fighter);
         id = count.incrementAndGet();
     }
 
