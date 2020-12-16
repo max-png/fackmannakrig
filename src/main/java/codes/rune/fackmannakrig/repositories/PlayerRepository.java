@@ -1,6 +1,6 @@
 package codes.rune.fackmannakrig.repositories;
 
-import codes.rune.fackmannakrig.models.Player;
+import codes.rune.fackmannakrig.db.entities.Player;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

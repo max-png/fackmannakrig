@@ -10,11 +10,12 @@ public class MatchService {
 
     // Inject a repository if needed
     @Autowired
-    private PlayerRepository playerRepository;
+    private final PlayerRepository playerRepository;
 
     public MatchService(PlayerRepository playerRepository) {
         this.playerRepository = playerRepository;
     }
+
 
     public int requestMatch(int playerId) {
         // TODO: If another player is waitin for match join it and play, otherwise start a new.
